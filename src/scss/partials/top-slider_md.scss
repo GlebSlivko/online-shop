@@ -1,0 +1,27 @@
+@import "../variables";
+
+
+@media (min-width: $breakpoint-tablet) {
+  .top-slider {
+    &-item {
+      height: 505px;
+    }
+    &-controls {
+      height: 39px;
+    }
+    &-jumbotron  {
+      width: 100%;
+      left: 0;
+      &-title  {
+        font-size: 44px;
+        margin-top: 45px;
+        &-fragment{
+          font-weight: 300;
+        }
+      }
+      &-slogan  {
+        font-size: 22px;
+      }
+    }
+  }
+}

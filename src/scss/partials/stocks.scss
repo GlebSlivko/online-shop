@@ -1,0 +1,98 @@
+@import "../variables.scss";
+
+
+.stock-first {
+  position: relative;
+  height: 420px;
+  background: url("../img/stocks/stock-first.jpg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 30px;
+
+  &-sub {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 355px;
+    width: calc(100% - 66px);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  &-text {
+    & h3 {
+      font-size: 36px;
+    }
+    & h2 {
+      font-size: 50px;
+    }
+    & p {
+      font-size: 40px;
+    }
+  }
+}
+
+.stock-second {
+  height: 135px;
+  background-color: #e8edf7;
+  overflow: hidden;
+  text-decoration: none !important;
+
+  & h3 {
+    font-size: 22px;
+    color: black;
+  }
+
+  & p {
+    letter-spacing: 2px;
+    color: black;
+  }
+
+  & .price {
+    display: block;
+    font-size: 30px;
+    color: $main-color;
+  }
+
+  & .stock-second-picture1 {
+    height: 130px;
+    position: relative;
+    right: 5px;
+  }
+
+  & .stock-second-picture2 {
+    height: 140px;
+    position: relative;
+    bottom: 4px;
+    left: 15px;
+  }
+}
+
+.stock-third {
+  height: 135px;
+  background-color: #fbf3f7;
+  margin-top: 30px;
+  overflow: hidden;
+  text-decoration: none !important;
+
+  & .stock-third-picture1 {
+    height: 145px;
+    position: relative;
+    right: 20px;
+  }
+
+  & h3 {
+    font-size: 22px;
+    color: $main-color;
+  }
+
+  & p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: black;
+  }
+}
+
+.weight-normal {
+  font-weight: normal;
+}
+

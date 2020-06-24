@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+.features  {
+  &-item  {
+    height: 121px;
+    width: 263px;
+    border-color: #b7b7b7 !important;
+    cursor: pointer;
+    &-img  {
+      height: 80px;
+      width: 80px;
+      margin-top: -35px;
+      border-color: #b7b7b7 !important;
+      &-inner {
+        height: 62px;
+        width: 62px;
+        border-color: #b7b7b7 !important;
+      }
+    }
+    &-icon  {
+      font-size: 26px;
+      margin-top: 16px;
+    }
+    &-title  {
+      font-weight: 600;
+    }
+    &-text  {
+      font-weight: 300;
+    }
+    &:hover {
+      color: #e0a38e;
+      .features-item-img-inner {
+        border-color: $main-color !important;
+        background-color: $main-color;
+      }
+      .features-item-icon  {
+        color: #ffffff;
+      }
+    }
+  }
+}

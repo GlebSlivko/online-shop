@@ -1,0 +1,44 @@
+@import "../variables.scss";
+
+
+@media (min-width: $breakpoint-tablet) {
+
+  .menu-search {
+    &-form  {
+      width: 320px;
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  .top-menu-items  {
+    position: static;
+    height: 82px;
+    color: $secondary-color;
+    background-color: #ffffff;
+  }
+  .top-menu-link  {
+    height: 82px;
+    color: $secondary-color;
+    border-top: 4px solid transparent;
+    &:hover  {
+      color: $secondary-color;
+    }
+  }
+
+  .nav-item-active .top-menu-link {
+    color: #ffffff;
+    background-color: $main-color;
+    border-bottom: none;
+    border-top: 4px solid $secondary-color;
+  }
+  .nav-item .top-menu-link:hover {
+    color: #ffffff;
+    background-color: $main-color;
+    border-bottom: none;
+    border-top: 4px solid $secondary-color;
+  }
+
+
+}

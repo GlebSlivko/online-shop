@@ -1,0 +1,46 @@
+@import "../variables";
+
+.top-slider {
+  &-item {
+    height: 302px;
+    z-index: -1;
+  }
+  &-controls {
+    height: 32px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &-control  {
+    background-color: #2a2a2a;
+    opacity: 1;
+    &:hover  {
+      background-color: $main-color;
+    }
+    &-icon  {
+      font-size: 14px;
+    }
+  }
+  &-jumbotron  {
+    height: 212px;
+    width: 418px;
+    background: rgba(0, 0, 0, 0.5);
+    top: calc(50% - 106px);
+    left: calc(50% - 209px);
+    &-title  {
+      font-size: 32px;
+      font-weight: 600;
+      &-fragment{
+        font-weight: 600;
+      }
+    }
+    &-slogan  {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    &-btn  {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}

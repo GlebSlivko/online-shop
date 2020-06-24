@@ -1,0 +1,69 @@
+@import "../variables.scss";
+
+.newsletter {
+  height: 119px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-container {
+  & h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-right: 25px;
+  }
+}
+
+.email-container {
+  position: relative;
+  width: 387px;
+  height: 46px;
+  background-color: white;
+  border-radius: 5px;
+
+  &-button {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+
+    & .fa-arrow-right {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: $main-color;
+    }
+  }
+
+  & .fa-envelope {
+    color: $main-color;
+    top: 16px;
+    left: 16px;
+
+  }
+
+  & input {
+    position: absolute;
+    top: 12px;
+    left: 48px;
+    outline: 0;
+    font-size: 14px;
+    width: 300px;
+    border: none;
+    padding-left: 10px;
+    border-left: 1px solid grey;
+  }
+}
+
+@media (min-width: 768px) {
+  .email-container {
+    width: 486px;
+    margin-left: 25px;
+  }
+}

@@ -1,0 +1,2675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	      crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+	<link rel="stylesheet" href="dist/css/reset.min.css">
+	<link rel="stylesheet" href="dist/css/multirange.min.css">
+	<link rel="stylesheet" href="dist/css/main.min.css">
+	<link rel="stylesheet" href="dist/css/tablet.min.css" media="(min-width: 768px">
+	<link rel="stylesheet" href="dist/css/desktop.min.css" media="(min-width: 1200px)">
+
+	<title>Furniture Online Shop</title>
+</head>
+<body>
+<header class="header" id="home">
+	<div class="header-navbar d-flex align-items-center text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-md-3 col-xl-2 px-0  d-flex justify-content-start align-items-center">
+					<div class="ml-2 mr-3">USD</div>
+					<div class="mr-3">English</div>
+					<a class="mr-3 text-white" href="#">Help</a>
+				</div>
+
+				<div class="d-none d-md-block col-md-6 col-xl-8"></div>
+
+				<div class="col-6 col-md-3 col-xl-2 px-0  d-flex justify-content-end align-items-center">
+					<a class="text-white" href="#" data-toggle="modal" data-target="#loginModal">
+						<i class="fas fa-user mr-2 d-inline"></i>Login
+					</a>
+
+					<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered justify-content-center" role="document">
+							<div class="header-navbar-modal modal-content rounded-0 border-0">
+								<div class="modal-header border-bottom-0">
+									<button type="button" class="c-modal-hide close d-flex justify-content-center p-0" data-dismiss="modal" aria-label="Close">
+										<i class="fa fa-times c-modal-icon text-white" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="modal-body px-5">
+									<h4 class="modal-title text-uppercase mb-4" id="loginModalLabel">login</h4>
+									<form class="form-signin">
+										<label for="inputEmail" class="sr-only">Email address</label>
+										<input type="email" id="inputEmail" class="c-modal-input form-control rounded-0 mb-3" placeholder="Name/Email*" required autofocus>
+										<label for="inputPassword" class="sr-only">Password</label>
+										<input type="password" id="inputPassword" class="c-modal-input form-control rounded-0 mb-3" placeholder="Password*" required>
+										<button class="header-navbar-modal-btn btn text-white text-uppercase px-4 py-2" type="submit">login</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<a  class="ml-3 mr-2 text-white" href="#" data-toggle="modal" data-target="#registerModal">
+						<i class="fas fa-lock mr-2 d-inline"></i>Register
+					</a>
+
+					<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered justify-content-center" role="document">
+							<div class="header-navbar-modal modal-content rounded-0 border-0">
+								<div class="modal-header border-bottom-0">
+									<button type="button" class="c-modal-hide close d-flex justify-content-center p-0" data-dismiss="modal" aria-label="Close">
+										<i class="fa fa-times c-modal-icon text-white" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div class="modal-body px-5 py-4">
+									<h4 class="modal-title text-uppercase mb-3" id="exampleModalLongTitle">registration</h4>
+									<form>
+										<label for="inputRegistrationName" class="sr-only">User name</label>
+										<input type="text" id="inputRegistrationName" class="c-modal-input form-control rounded-0 mb-3" placeholder="Name*" required autofocus>
+										<label for="inputRegistrationEmail" class="sr-only">Email address</label>
+										<input type="email" id="inputRegistrationEmail" class="c-modal-input form-control rounded-0 mb-3" placeholder="Email*" required>
+										<label for="inputRegistrationPassword" class="sr-only">Password</label>
+										<input type="password" id="inputRegistrationPassword" class="c-modal-input form-control rounded-0 mb-3" placeholder="Password*" required>
+										<button class="header-navbar-modal-btn btn text-white text-uppercase px-4 py-2" type="submit">Register</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header-content d-flex align-items-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 p-0 d-flex justify-content-start">
+					<i class="fas fa-mobile-alt header-content-mobile-icon d-none d-md-block  ml-2 align-self-center"></i>
+					<a class="ml-2 align-self-center text-white" href="#">
+						2300 - 3560 - 222
+					</a>
+				</div>
+
+				<div class="col-4 p-0 d-flex justify-content-center">
+					<div class="header-content-logo"></div>
+				</div>
+
+				<div class="col-4 d-flex justify-content-end">
+					<a class="header-content-cart d-flex align-self-center text-decoration-none rounded position-relative text-white" data-toggle="modal" data-target="#myModal" href="#">
+						<i class="fas fa-shopping-basket header-content-cart-icon align-self-center ml-2"></i>
+						<div class="header-content-cart-quantity rounded-circle text-white position-absolute d-flex align-items-center justify-content-center" id="countProductCart">
+							<div class="cart-quantity-counter">0</div>
+						</div>
+					</a>
+
+					<div class="modal fade cart-modal" id="myModal">
+						<div class="modal-dialog modal-dialog-centered justify-content-center modal-lg modal-xl">
+							<div class="header-content-cart-modal modal-content rounded-0">
+								<div class="modal-header border-bottom-0">
+									<button type="button" class="c-modal-hide close d-flex justify-content-center p-0" data-dismiss="modal">
+										<i class="fas fa-times c-modal-icon text-white"></i>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="" id="cartContainer"></div>
+									<p class="empty-cart-title text-center">Your cart is empty</p>
+									<p class="empty-cart-slogan text-center">But it's never too late to fix it :)</p>
+								</div>
+
+								<div class="cart-modal-footer-hide modal-footer mx-md-3 mx-xl-5 pt-0 pb-5 d-flex flex-column border-top-0" id="cartFooter">
+									<div class="col-12 d-flex justify-content-end">
+										<div class="cart-modal-total d-inline-block text-left">Total: $1000</div>
+									</div>
+									<div class="col-12 d-flex justify-content-between mt-3 px-0">
+										<button class="cart-modal-btn text-uppercase text-white border-0">
+											<i class="fas fa-chevron-right mr-2"></i>continue</button>
+										<button class="cart-modal-btn text-uppercase text-white border-0">
+											<i class="fas fa-shopping-basket mr-2"></i>buy now</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="top-menu shadow">
+	<div class="container">
+		<div class="row justify-content-between">
+
+			<nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center w-100 p-0 mx-2">
+
+				<form class="menu-search-form form-inline position-relative py-3">
+					<input class="form-control form-search rounded-0 border-dark py-4 pr-5 w-100" type="search" placeholder="Search products..." aria-label="Search">
+					<button class="menu-search-btn btn position-absolute py-2" type="submit">
+						<i class="fas fa-search" aria-hidden="true"></i>
+					</button>
+				</form>
+
+				<button class="navbar-toggler border-0 p-0 mr-2" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+					<input class="top-menu-checkbox d-none" type="checkbox" id="top-menu-checkbox">
+					<label  for="top-menu-checkbox"  class="top-menu-checkbox-icon position-relative -i-cursor">
+						<span class="top-menu-checkbox-icon-stick top-menu-checkbox-icon-stick--top"></span>
+						<span class="top-menu-checkbox-icon-stick top-menu-checkbox-icon-stick--middle"></span>
+						<span class="top-menu-checkbox-icon-stick top-menu-checkbox-icon-stick--bottom"></span>
+					</label>
+				</button>
+
+				<div class="top-menu-items collapse navbar-collapse justify-content-end" id="navbar1">
+					<ul class="navbar-nav d-flex justify-content-end mt-lg-0">
+						<li class="nav-item nav-item-active">
+							<a class="top-menu-link nav-link text-uppercase text-right d-lg-table-cell align-middle py-3 mr-2 ml-4 m-lg-0" href="#home">home</a>
+						</li>
+						<li class="nav-item">
+							<a class="top-menu-link nav-link text-uppercase text-right d-lg-table-cell align-middle py-3 mr-2 ml-4 m-lg-0 py-lg-0" href="#slider">slider</a>
+						</li>
+						<li class="nav-item">
+							<a class="top-menu-link nav-link text-uppercase text-right d-lg-table-cell align-middle py-3 mr-2 ml-4 m-lg-0 py-lg-0" href="#features">features</a>
+						</li>
+						<li class="nav-item">
+							<a class="top-menu-link nav-link text-uppercase text-right d-lg-table-cell align-middle py-3 mr-2 ml-4 m-lg-0 py-lg-0" href="#stocks">stocks</a>
+						</li>
+						<li class="nav-item">
+							<a class="top-menu-link nav-link text-uppercase text-right d-lg-table-cell align-middle py-3 mr-2 ml-4 m-lg-0 py-lg-0" href="#products">products</a>
+						</li>
+						<li class="nav-item">
+							<a class="top-menu-link nav-link text-uppercase text-right d-lg-table-cell align-middle py-3 mr-2 ml-4 m-lg-0 py-lg-0" href="#gallery">gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="top-menu-link nav-link text-uppercase text-right d-lg-table-cell align-middle py-3 mr-2 ml-4 m-lg-0 py-lg-0" href="#blog">blog</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</section>
+
+
+<section class="top-slider">
+	<div class="container px-2">
+		<div id="slider" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner position-relative">
+				<div class="top-slider-jumbotron jumbotron jumbotron-fluid position-absolute text-center p-0 m-0">
+					<div class="position-relative text-white">
+						<h2 class="top-slider-jumbotron-title text-uppercase pt-4 pb-3"><span class="top-slider-jumbotron-title-fragment">indoor</span> furniture</h2>
+						<p class="top-slider-jumbotron-slogan text-uppercase py-1 mb-3 py-md-0">save up to 50% of all furniture</p>
+						<button  class="top-slider-jumbotron-btn btn btn-lg bg-white text-uppercase px-4 py-3 mt-3" type="button">shop now</button>
+					</div>
+				</div>
+
+				<div class="top-slider-item carousel-item active">
+					<img class="d-block mx-auto w-100 h-100" src="dist/img/top-slider/top-slider_1.jpg" alt="First slide">
+				</div>
+				<div class="top-slider-item carousel-item">
+					<img class="d-block mx-auto w-100 h-100" src="dist/img/top-slider/top-slider_2.jpg" alt="Second slide">
+				</div>
+
+				<div class="top-slider-controls row w-100 m-0 position-absolute">
+					<a class="top-slider-control col-6 carousel-control-prev position-static" href="#slider" data-slide="prev">
+						<i class="top-slider-control-icon fas fa-chevron-left"></i>
+					</a>
+					<a class="top-slider-control col-6 carousel-control-next position-static" href="#slider" data-slide="next">
+						<i class="top-slider-control-icon fas fa-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="features" id="features">
+	<div class="container px-2 pt-2 pt-md-0 pb-3 pb-md-0  mt-4 mb-5 mb-xl-0">
+		<div class="row">
+			<div class="col-12 col-md-6 col-xl-3">
+				<div class="features-item border text-center mt-5 mb-3 mb-xl-2 mx-auto mr-md-0">
+					<div class="features-item-img border d-inline-block text-center bg-white rounded-circle">
+						<div class="features-item-img-inner border d-inline-block mx-auto my-2 rounded-circle text-center ">
+							<i class="features-item-icon fas fa-truck fa-flip-horizontal"></i>
+						</div>
+					</div>
+					<p class="features-item-title text-uppercase my-2 h5">Free Shipping</p>
+					<p class="features-item-text text-uppercase h5">all order</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3">
+				<div class="features-item border text-center mt-5 mb-3 mb-xl-2 mx-auto ml-md-0">
+					<div class="features-item-img border d-inline-block text-center bg-white rounded-circle">
+						<div class="features-item-img-inner border d-inline-block mx-auto my-2 rounded-circle text-center ">
+							<i class="features-item-icon fas fa-headphones"></i>
+						</div>
+					</div>
+					<p class="features-item-title text-uppercase my-2 h5">24/7 customer</p>
+					<p class="features-item-text text-uppercase h5">support</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3">
+				<div class="features-item border text-center mt-5 mb-3 mb-xl-2 mx-auto mr-md-0">
+					<div class="features-item-img border d-inline-block text-center bg-white rounded-circle">
+						<div class="features-item-img-inner border d-inline-block mx-auto my-2 rounded-circle text-center ">
+							<i class="features-item-icon fas fa-reply-all"></i>
+						</div>
+					</div>
+					<p class="features-item-title text-uppercase my-2 h5">money back</p>
+					<p class="features-item-text text-uppercase h5">guarantee</p>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-xl-3">
+				<div class="features-item border text-center mt-5 mb-3 mb-xl-2 mx-auto ml-md-0">
+					<div class="features-item-img border d-inline-block text-center bg-white rounded-circle">
+						<div class="features-item-img-inner border d-inline-block mx-auto my-2 rounded-circle text-center ">
+							<i class="features-item-icon fas fa-bullhorn"></i>
+						</div>
+					</div>
+					<p class="features-item-title text-uppercase my-2 h5">MEMBER DISCOUNT
+					</p>
+					<p class="features-item-text text-uppercase h5">first order</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="stocks" id="stocks">
+    <div class="container my-4 px-2">
+        <div class="row">
+            <div class="d-none d-md-block col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-0">
+                <a href="#" class="d-block stock-first">
+                    <div class="stock-first-sub">
+                        <div class="stock-first-text">
+                            <h3 class="font-weight-bold text-uppercase text-white">guest room</h3>
+                            <h2 class="font-weight-bold text-uppercase text-white">SOFA</h2>
+                            <p class="font-weight-bold text-uppercase text-white">-20%</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-0">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="#" class="stock-second d-flex justify-content-between">
+                            <div>
+                                <img class="stock-second-picture1" src="src/img/stocks/stocks-chair.png" alt="">
+                            </div>
+                            <div class="m-auto">
+                                <h3 class="font-weight-bold text-uppercase">Office <span class="weight-normal">chair</span></h3>
+                                <p class="text-uppercase">collection</p>
+                                <span class="price font-weight-bold mt-2">$200.00</span>
+                            </div>
+                            <div>
+                                <img class="stock-second-picture2" src="src/img/stocks/stock-red-chair.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a href="#" class="stock-third d-flex justify-content-between">
+                            <div>
+                                <img class="stock-third-picture1" src="src/img/stocks/stocks-bed.png" alt="">
+                            </div>
+                            <div class="m-auto">
+                                <h3 class="font-weight-bold text-uppercase text-center">Special <span class="weight-normal">collection</span></h3>
+                                <p class="text-uppercase text-center">save up 45% of furniture</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="furniture" id="products">
+
+    <div class="modal fade" id="productsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center modal-md modal-xl" role="document">
+            <div class="furniture-modal modal-content rounded-0 border-0">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="c-modal-hide close d-flex justify-content-center p-0" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-times c-modal-icon text-white" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="modal-body px-5 py-4">
+                    <div class="container-fluid my-3">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xl-5">
+                                <div class="modal-body-img mx-auto mb-4">
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-7">
+                                <div class="modal-body-text">
+                                    <h2 class="font-weight-bold my-3">Sunbaby Magic Bear Chair</h2>
+                                    <div class="stars my-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span class="text-muted ml-3">(0 reviews)</span>
+                                    </div>
+                                    <hr class="text-muted text-center">
+                                    <div class="mb-4">
+                                        <p class="price-prev text-muted d-inline-block"><s>$350.00</s></p>
+                                        <p class="price-actual text-white d-inline-block ml-2">$250.00</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a href="#" class="add-to-card text-white">ADD TO CART
+                                            <i class="fas fa-shopping-basket position-absolute"></i>
+                                        </a>
+                                    </div>
+                                    <hr class="text-muted text-center">
+                                    <h4 class="font-weight-bold my-3">Quick Overview</h4>
+                                    <p class="description text-muted">Nam tristique porta ligula, vel viverra sem eleifend nec. Nulla sed purus augue, eu euis mod tellus. Nam mattis eros tis sagittis. Vestibulum suscipit cursus biben.</p>
+                                    <div class="general-info d-flex my-4">
+                                        <div class="d-flex">
+                                            <p class="availability font-weight-bold">Availability: </p>
+                                            <span class="availability-value text-muted ml-3">In Stock</span>
+                                        </div>
+                                        <div class="d-flex ml-3">
+                                            <p class="category font-weight-bold">Category: </p>
+                                            <span class="category-value text-muted ml-3">Furniture</span>
+                                        </div>
+                                    </div>
+                                    <hr class="text-muted text-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid my-2">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-xl-5">
+                            </div>
+                            <div class="col-12 col-md-12 col-xl-7 mx-auto">
+                                <div class="furniture-socials d-flex flex-wrap">
+                                    <a href="#" class="furniture-social share mb-1 text-white">Share
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="furniture-social ml-1 mb-1 text-muted">Google+
+                                        <i class="fab fa-google-plus-g text-danger"></i>
+                                    </a>
+                                    <a href="#" class="furniture-social ml-1 mb-1 text-muted">Tweet
+                                        <i class="fab fa-twitter text-primary"></i>
+                                    </a>
+                                    <a href="#" class="furniture-social ml-1 mb-1 text-muted">Pinterest
+                                        <i class="fab fa-pinterest-p text-danger"></i>
+                                    </a>
+                                    <a href="#" class="furniture-social ml-1 mb-1 text-muted">Linkedin
+                                        <i class="fab fa-linkedin-in text-info"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-2">
+        <div class="row mb-1 col-md-10 offset-md-1 col-xl-12 offset-xl-0">
+            <div class="col-6 col-xl-9">
+                <h2 class="furniture-title text-uppercase font-weight-bold text-dark">furniture</h2>
+            </div>
+            <div class="col-6 col-xl-3 text-right">
+                <a class="furniture-filter d-xl-none" href="#">Filters by
+                    <i class="fas fa-th-list position-absolute"></i>
+                </a>
+                <h2 class="d-none d-xl-block text-left text-uppercase font-weight-bold mt-2 text-dark">Filter By categories</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-10 offset-md-1 offset-xl-0 col-xl-9">
+                <hr class="bg-dark">
+            </div>
+            <div class="d-none d-xl-block col-xl-3">
+                <hr class="bg-dark">
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-9">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="furniture-item mx-auto mr-md-0">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture1.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product1-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="0">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="furniture-item mx-auto ml-md-0">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture2.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product2-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="1">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="furniture-item mx-auto mr-md-0">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture3.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product3-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="2">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 d-none d-md-block">
+                        <div class="furniture-item mx-auto ml-md-0">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture4.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product4-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="3">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture5.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product5-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="4">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture6.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product6-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="5">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture7.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product7-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="6">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture8.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product8-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="7">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture9.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product9-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="8">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hidden col-12 col-md-6 col-xl-4">
+                        <div class="furniture-item mx-auto mr-md-0">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture10.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product10-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="9">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden col-12 col-md-6 col-xl-4">
+                        <div class="furniture-item mx-auto ml-md-0">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture11.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product11-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="10">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden col-12 col-md-6 col-xl-4">
+                        <div class="furniture-item mx-auto mr-md-0">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture12.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product12-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="11">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden col-12 col-md-6 col-xl-4 d-none d-md-block">
+                        <div class="furniture-item mx-auto ml-md-0">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture13.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product13-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="12">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture14.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product14-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="13">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture15.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product15-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="14">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture16.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product16-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="15">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture17.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product17-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="16">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+                        <div class="furniture-item mx-auto">
+                            <div class="furniture-item-img position-relative">
+                                <img class="position-absolute" src="src/img/furniture/furniture18.png" alt="">
+                                <div class="circle position-absolute">
+                                    <span class="circle-text position-absolute text-white">sale</span>
+                                </div>
+                                <a id="product18-btn" href="#" class="quick-view position-absolute text-white" data-toggle="modal" data-target="#productsModal">Quick View</a>
+                                <a href="#" class="add-to-card position-absolute text-white" data-id="17">ADD TO CART
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </div>
+                            <div class="furniture-item-info position-relative">
+                                <p class="text-center py-3">Aenean Ru Bristique</p>
+                                <div class="stars text-center">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <hr class="bg-dark">
+                                <div class="furniture-item-info-bottom position-absolute d-flex">
+                                    <a href="#" class="d-block position-absolute button-like">
+                                        <i class="far fa-heart position-absolute text-dark"></i>
+                                    </a>
+                                    <a href="#" class="d-block position-absolute button-arrows">
+                                        <i class="fas fa-exchange-alt position-absolute text-dark"></i>
+                                    </a>
+                                    <div class="furniture-price position-absolute">
+                                        <p class="text-center text-white font-weight-bold">$15.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-xl-3 d-none d-md-none d-xl-block">
+                <div class="filter-category">
+                    <div class="filter-category-item d-flex justify-content-between align-items-center">
+                        <span data-content="first-content"><i class="fas fa-angle-right mr-1"></i>Furniture</span>
+                        <div class="digit rounded-circle text-white text-center" data-content="first-content">
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <div class="filter-category-item d-flex justify-content-between align-items-center">
+                        <span data-content="second-content"><i class="fas fa-angle-right mr-1"></i>Sofa</span>
+                        <div class="digit rounded-circle text-white text-center" data-content="second-content">
+                            <p>4</p>
+                        </div>
+                    </div>
+                    <div class="filter-category-item d-flex justify-content-between align-items-center">
+                        <span data-content="third-content"><i class="fas fa-angle-right mr-1"></i>Chair</span>
+                        <div class="digit rounded-circle text-white text-center" data-content="third-content">
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="filter-category-item d-flex justify-content-between align-items-center">
+                        <span data-content="fourth-content"><i class="fas fa-angle-right mr-1"></i>Table</span>
+                        <div class="digit rounded-circle text-white text-center" data-content="fourth-content">
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="filter-category-item d-flex justify-content-between align-items-center">
+                        <span data-content="fifth-content"><i class="fas fa-angle-right mr-1"></i>Bedroom</span>
+                        <div class="digit rounded-circle text-white text-center" data-content="fifth-content">
+                            <p>5</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="d-none d-xl-block text-left text-uppercase font-weight-bold mt-2 text-dark mt-5">Filter By Price</h2>
+                <hr class="bg-dark">
+                <input id="range-slider" type="range" multiple value="135,500" min="0" max="1000"/>
+                <div class="d-flex justify-content-between align-items-center range-slider-price">
+                    <button class="my-3">Filter</button>
+                    <div class="range-slider-price-numbers d-flex justify-content-center align-items-center">
+                        <div>
+                            <span>$</span>
+                            <span class="range-slider-value-first">135</span>
+                            <span>-</span>
+                            <span>$</span>
+                            <span class="range-slider-value-second">500</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2 class="d-none d-xl-block text-left text-uppercase font-weight-bold mt-2 text-dark mt-5">Filter By Color</h2>
+                <hr class="bg-dark">
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation1">
+                    <label class="custom-control-label red" for="customControlValidation1">Red</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation2">
+                    <label class="custom-control-label black" for="customControlValidation2">Black</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation3">
+                    <label class="custom-control-label yellow" for="customControlValidation3">Yellow</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation4">
+                    <label class="custom-control-label blue" for="customControlValidation4">Blue</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation5">
+                    <label class="custom-control-label pink" for="customControlValidation5">Pink</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-2">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation6">
+                    <label class="custom-control-label green" for="customControlValidation6">Green</label>
+                </div>
+
+
+                <h2 class="d-none d-xl-block text-left text-uppercase font-weight-bold mt-2 text-dark mt-5">Filter By Size</h2>
+                <hr class="bg-dark">
+                <div class="custom-control custom-checkbox mb-2 d-flex justify-content-between align-items-center">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation7">
+                    <label class="custom-control-label grey1" for="customControlValidation7">S</label>
+                    <div class="digitSize circle1 rounded-circle text-white text-center">
+                        <p>3</p>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 d-flex justify-content-between align-items-center">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation8">
+                    <label class="custom-control-label grey2" for="customControlValidation8">M</label>
+                    <div class="digitSize circle2 rounded-circle text-white text-center">
+                        <p>4</p>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 d-flex justify-content-between align-items-center">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation9">
+                    <label class="custom-control-label grey3" for="customControlValidation9">L</label>
+                    <div class="digitSize circle3 rounded-circle text-white text-center">
+                        <p>5</p>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 d-flex justify-content-between align-items-center">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation10">
+                    <label class="custom-control-label grey4" for="customControlValidation10">XL</label>
+                    <div class="digitSize circle4 rounded-circle text-white text-center">
+                        <p>5</p>
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox mb-2 d-flex justify-content-between align-items-center">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation11">
+                    <label class="custom-control-label grey5" for="customControlValidation11">XL</label>
+                    <div class="digitSize circle5 rounded-circle text-white text-center">
+                        <p>5</p>
+                    </div>
+                </div>
+
+
+                <h2 class="d-none d-xl-block text-left text-uppercase font-weight-bold mt-2 text-dark mt-5">Filter By Tags</h2>
+                <hr class="bg-dark">
+                <div class="filter-tags tag1 mb-3 d-flex flex-wrap">
+                    <div class="filter-tag mb-3"><i class="fas fa-tags"></i>Table</div>
+                    <div class="filter-tag ml-3 mb-3"><i class="fas fa-tags"></i>Chair</div>
+                    <div class="filter-tag mb-3"><i class="fas fa-tags"></i>Hand Bag</div>
+                    <div class="filter-tag ml-3 mb-3"><i class="fas fa-tags"></i>Woman</div>
+                    <div class="filter-tag mb-3"><i class="fas fa-tags"></i>Fashion</div>
+                    <div class="filter-tag ml-3 mb-3"><i class="fas fa-tags"></i>Clothes</div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-9">
+                <button type="button" class="d-block mx-auto button-upload btn btn-circle btn-lg"><i class="fas fa-sync-alt"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="furniture-gallery" id="gallery">
+	<div class="container my-5 px-2">
+		<div class="row">
+			<div class="col-12 col-md-10 offset-md-1 col-xl-6 offset-xl-0">
+				<h2 class="furniture-gallery-title text-uppercase h5 position-relative mt-3">furniture gallery</h2>
+				<ul class="furniture-gallery-tabs nav nav-tabs border mt-4" id="furniture-tabs" role="tablist">
+					<li class="nav-item w-25 text-center text-uppercase border-right">
+						<a class="furniture-gallery-tabs-link nav-link border-0 position-relative" id="featured-tab" href="#featured" aria-controls="featured" aria-selected="true" role="tab" data-toggle="tab">
+							featured
+						</a>
+					</li>
+					<li class="nav-item w-25 text-center text-uppercase border-right">
+						<a class="furniture-gallery-tabs-link nav-link active border-0 position-relative" id="top-seller-tab" href="#top-seller" aria-controls="top-seller" aria-selected="false" role="tab" data-toggle="tab">
+							top seller
+						</a>
+					</li>
+					<li class="nav-item w-25 text-center text-uppercase border-right">
+						<a class="furniture-gallery-tabs-link nav-link border-0 position-relative" id="sale-off-tab"  href="#sale-off" aria-controls="sale-off" aria-selected="false" role="tab" data-toggle="tab">
+							sale off
+						</a>
+					</li>
+					<li class="nav-item w-25 text-center text-uppercase">
+						<a class="furniture-gallery-tabs-link nav-link border-0 position-relative" id="top-rated-tab"  href="#top-rated" aria-controls="top-rated" aria-selected="false" role="tab" data-toggle="tab">
+							top rated
+						</a>
+					</li>
+				</ul>
+
+
+				<div class="furniture-gallery-tab-content tab-content border border-top-0" id="furniture-tabs-content">
+					<div class="tab-pane fade" id="featured" role="tabpanel">
+						<div id="carousel0" data-interval="false" class="carousel slide" data-ride="carousel">
+
+							<div class="furniture-gallery-slider carousel-inner">
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="0">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="0">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/10.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-price-new text-white h5 mt-2">$120.00</h4>
+														<h4 class="furniture-gallery-slide-price-last text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item active">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="1">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="1">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/11.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="2">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="2">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/12.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="3">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="3">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/13.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="4">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="4">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/14.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="5">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="5">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/15.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="furniture-gallery-slider-controls bg-white position-relative d-flex justify-content-around align-items-center">
+
+							<a id="carousel0-prev" class="furniture-gallery-slider-prev carousel-control-prev position-relative" href="#carousel0" role="button" data-slide="prev">
+								<i class="furniture-gallery-slider-control fas fa-chevron-left"></i>
+							</a>
+
+							<ol id="indicators-carousel0" class="furniture-gallery-slider-indicators carousel-indicators d-flex justify-content-between position-relative m-0 overflow-hidden">
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel0" data-slide-to="0" >
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/10.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator active-indicator0 d-flex justify-content-center" data-target="#carousel0" data-slide-to="1">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/11.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel0" data-slide-to="2">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/12.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel0" data-slide-to="3">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/13.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel0" data-slide-to="4">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/14.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel0" data-slide-to="5">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/15.png" alt="products">
+								</li>
+							</ol>
+
+							<a id="carousel0-next"  class="furniture-gallery-slider-next carousel-control-next position-relative" href="#carousel0" role="button" data-slide="next">
+								<i class="furniture-gallery-slider-control fas fa-chevron-right"></i>
+							</a>
+						</div>
+
+					</div>
+
+					<div class="tab-pane fade show active" id="top-seller" role="tabpanel">
+						<div id="carousel1" data-interval="false" class="carousel slide" data-ride="carousel">
+
+							<div class="furniture-gallery-slider carousel-inner">
+								<div class="furniture-gallery-slide carousel-item active">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="0">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="0">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/10.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-price-new text-white h5 mt-2">$120.00</h4>
+														<h4 class="furniture-gallery-slide-price-last text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="1">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="1">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/11.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="2">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="2">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/12.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="3">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="3">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/13.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="4">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="4">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/14.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="5">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="5">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/15.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="furniture-gallery-slider-controls bg-white position-relative d-flex justify-content-around align-items-center">
+
+							<a id="carousel1-prev" class="furniture-gallery-slider-prev carousel-control-prev position-relative" href="#carousel1" role="button" data-slide="prev">
+								<i class="furniture-gallery-slider-control fas fa-chevron-left"></i>
+							</a>
+
+							<ol id="indicators-carousel1" class="furniture-gallery-slider-indicators carousel-indicators d-flex justify-content-between position-relative m-0 overflow-hidden">
+								<li class="furniture-gallery-slider-indicator active-indicator1 d-flex justify-content-center" data-target="#carousel1" data-slide-to="0" >
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/10.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel1" data-slide-to="1">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/11.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel1" data-slide-to="2">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/12.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel1" data-slide-to="3">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/13.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel1" data-slide-to="4">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/14.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel1" data-slide-to="5">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/15.png" alt="products">
+								</li>
+							</ol>
+
+							<a id="carousel1-next" class="furniture-gallery-slider-next carousel-control-next position-relative" href="#carousel1" role="button" data-slide="next">
+								<i class="furniture-gallery-slider-control fas fa-chevron-right"></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="sale-off" role="tabpanel">
+						<div id="carousel2" data-interval="false" class="carousel slide" data-ride="carousel">
+
+							<div class="furniture-gallery-slider carousel-inner">
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="0">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="0">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/10.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-price-new text-white h5 mt-2">$120.00</h4>
+														<h4 class="furniture-gallery-slide-price-last text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="1">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="1">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/11.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item active">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="2">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="2">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/12.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="3">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="3">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/13.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="4">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="4">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/14.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="5">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="5">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/15.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="furniture-gallery-slider-controls bg-white position-relative d-flex justify-content-around align-items-center">
+
+							<a id="carousel2-prev" class="furniture-gallery-slider-prev carousel-control-prev position-relative" href="#carousel2" role="button" data-slide="prev">
+								<i class="furniture-gallery-slider-control fas fa-chevron-left"></i>
+							</a>
+
+							<ol id="indicators-carousel2" class="furniture-gallery-slider-indicators carousel-indicators d-flex justify-content-between position-relative m-0 overflow-hidden">
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel2" data-slide-to="0" >
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/10.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel2" data-slide-to="1">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/11.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator active-indicator2 d-flex justify-content-center" data-target="#carousel2" data-slide-to="2">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/12.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel2" data-slide-to="3">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/13.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel2" data-slide-to="4">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/14.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel2" data-slide-to="5">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/15.png" alt="products">
+								</li>
+							</ol>
+
+							<a id="carousel2-next"  class="furniture-gallery-slider-next carousel-control-next position-relative" href="#carousel2" role="button" data-slide="next">
+								<i class="furniture-gallery-slider-control fas fa-chevron-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="top-rated" role="tabpanel">
+						<div id="carousel3" data-interval="false" class="carousel slide" data-ride="carousel">
+
+							<div class="furniture-gallery-slider carousel-inner">
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="0">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="0">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/10.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-price-new text-white h5 mt-2">$120.00</h4>
+														<h4 class="furniture-gallery-slide-price-last text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="1">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="1">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/11.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="2">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="2">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/12.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="3">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="3">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/13.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item active">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="4">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="4">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/14.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="furniture-gallery-slide carousel-item">
+									<div class="row mx-0 justify-content-between">
+										<div class="furniture-gallery-slide-menu d-flex flex-column ml-3">
+											<a class="furniture-gallery-slide-menu-item border mb-2 d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to wishlist" href="#">
+												<i class="far fa-heart mx-auto"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-quick-view border mb-2 d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#productsModal" href="#" data-prId="5">
+												<i class="fas fa-eye"  data-toggle="tooltip"  data-placement="right" title="Quick view"></i>
+											</a>
+											<a class="furniture-gallery-slide-menu-item furniture-gallery-add-to-cart border d-flex justify-content-center align-items-center" data-toggle="tooltip" data-placement="right" title="Add to cart" href="#" data-gId="5">
+												<i class="fas fa-shopping-basket"></i>
+											</a>
+										</div>
+
+										<div class="furniture-gallery-slide-img d-flex justify-content-center">
+											<img class="img-fluid h-100" src="dist/img/furniture-gallery/15.png" alt="products">
+
+											<div class="furniture-gallery-slide-info position-absolute bg-white">
+												<div class="furniture-gallery-slide-text">
+													<h4 class="furniture-gallery-slide-title text-center">Aenean Ru Bristique</h4>
+													<div class="d-flex justify-content-center mt-2">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+														<i class="far fa-star"></i>
+													</div>
+													<div class="furniture-gallery-slide-price rounded-circle position-absolute d-flex flex-column justify-content-center align-items-center">
+														<h4 class="furniture-gallery-slide-prices text-white h5">$120.00</h4>
+														<h4 class="furniture-gallery-slide-prices text-white h6"><s>$160.00</s></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="furniture-gallery-slider-controls bg-white position-relative d-flex justify-content-around align-items-center">
+
+							<a id="carousel3-prev" class="furniture-gallery-slider-prev carousel-control-prev position-relative" href="#carousel3" role="button" data-slide="prev">
+								<i class="furniture-gallery-slider-control fas fa-chevron-left"></i>
+							</a>
+
+							<ol id="indicators-carousel3" class="furniture-gallery-slider-indicators carousel-indicators d-flex justify-content-between position-relative m-0 overflow-hidden">
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel3" data-slide-to="0" >
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/10.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel3" data-slide-to="1">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/11.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel3" data-slide-to="2">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/12.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel3" data-slide-to="3">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/13.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator active-indicator3 d-flex justify-content-center" data-target="#carousel3" data-slide-to="4">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/14.png" alt="products">
+								</li>
+								<li class="furniture-gallery-slider-indicator d-flex justify-content-center" data-target="#carousel3" data-slide-to="5">
+									<img class="img-fluid h-100" src="dist/img/furniture-gallery/15.png" alt="products">
+								</li>
+							</ol>
+
+							<a id="carousel3-next"  class="furniture-gallery-slider-next carousel-control-next position-relative" href="#carousel3" role="button" data-slide="next">
+								<i class="furniture-gallery-slider-control fas fa-chevron-right"></i>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="d-none col-6 d-xl-block mt-3">
+				<div class="furniture-gallery-banner pt-5">
+					<div class="furniture-gallery-banner-text px-5 ml-3 mt-4">
+						<h2 class="furniture-gallery-banner-price"><span class="furniture-gallery-banner-price-descr text-dark">FROM </span>$50.80</h2>
+						<h2 class="furniture-gallery-banner-title mt-3 mb-4">Bedroom Bed</h2>
+						<button class="furniture-gallery-banner-btn btn btn-lg text-uppercase text-white px-4 py-3" type="button" >shop now</button>
+					</div>
+					<div class="furniture-gallery-banner-img mt-4 mx-auto">
+						<img class="img-fluid" src="dist/img/furniture-gallery/furniture-gallery-banner.png"  alt="bedroom-bed-banner">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<section class="slider p-4">
+    <div class="container px-2">
+        <div id="blog" class="carousel slide" data-ride="carousel">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="blog-title font-weight-bold">Latest Blog</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="controls col-12 d-flex justify-content-between">
+                    <hr>
+                    <div class="controls-items d-flex ml-2 d-md-none">
+                        <div class="carousel-control-prev  controls-item1" data-target="#blog" data-slide="prev"></div>
+                        <div class="carousel-control-next controls-item2 ml-1" data-target="#blog" data-slide="next"></div>
+                    </div>
+                    <div class="carousel-indicators ml-2 d-none d-md-flex align-items-center">
+                        <div data-target="#blog" data-slide-to="0" class="bullet rounded-circle ml-2 active"></div>
+                        <div data-target="#blog" data-slide-to="1" class="bullet rounded-circle ml-2"></div>
+                        <div data-target="#blog" data-slide-to="2" class="bullet rounded-circle ml-2"></div>
+                        <div data-target="#blog" data-slide-to="3" class="bullet rounded-circle ml-2 d-xl-none"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-4 my-3">
+                            <div class="blog-item mx-auto">
+                                <div class="blog-item-img">
+                                    <img src="src/img/blog/blog1.png" alt="">
+                                </div>
+                                <div class="blog-item-info mx-auto">
+                                    <div class="blog-item-info-top d-flex justify-content-around my-4">
+                                        <div>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span>15 JAN 2016</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments"></i>
+                                            <span>4 Comments</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bold py-2">Products That Fight Static </h2>
+                                    <p class="py-2">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                                    <a href="#" class="mx-auto">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4 my-3">
+                            <div class="blog-item mx-auto">
+                                <div class="blog-item-img">
+                                    <img src="src/img/blog/blog2.png" alt="">
+                                </div>
+                                <div class="blog-item-info mx-auto">
+                                    <div class="blog-item-info-top d-flex justify-content-around my-4">
+                                        <div>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span>15 JAN 2016</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments"></i>
+                                            <span>4 Comments</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bold py-2">Products That Fight Static </h2>
+                                    <p class="py-2">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                                    <a href="#" class="mx-auto">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4 my-3">
+                            <div class="blog-item mx-auto">
+                                <div class="blog-item-img">
+                                    <img src="src/img/blog/blog3.png" alt="">
+                                </div>
+                                <div class="blog-item-info mx-auto">
+                                    <div class="blog-item-info-top d-flex justify-content-around my-4">
+                                        <div>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span>15 JAN 2016</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments"></i>
+                                            <span>4 Comments</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bold py-2">Products That Fight Static </h2>
+                                    <p class="py-2">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                                    <a href="#" class="mx-auto">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-4 my-3">
+                            <div class="blog-item mx-auto">
+                                <div class="blog-item-img">
+                                    <img src="src/img/blog/blog1.png" alt="">
+                                </div>
+                                <div class="blog-item-info mx-auto">
+                                    <div class="blog-item-info-top d-flex justify-content-around my-4">
+                                        <div>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span>15 JAN 2016</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments"></i>
+                                            <span>4 Comments</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bold py-2">Products That Fight Static </h2>
+                                    <p class="py-2">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                                    <a href="#" class="mx-auto">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4 my-3">
+                            <div class="blog-item mx-auto">
+                                <div class="blog-item-img">
+                                    <img src="src/img/blog/blog2.png" alt="">
+                                </div>
+                                <div class="blog-item-info mx-auto">
+                                    <div class="blog-item-info-top d-flex justify-content-around my-4">
+                                        <div>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span>15 JAN 2016</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments"></i>
+                                            <span>4 Comments</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bold py-2">Products That Fight Static </h2>
+                                    <p class="py-2">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                                    <a href="#" class="mx-auto">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4 my-3">
+                            <div class="blog-item mx-auto">
+                                <div class="blog-item-img">
+                                    <img src="src/img/blog/blog3.png" alt="">
+                                </div>
+                                <div class="blog-item-info mx-auto">
+                                    <div class="blog-item-info-top d-flex justify-content-around my-4">
+                                        <div>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span>15 JAN 2016</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments"></i>
+                                            <span>4 Comments</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bold py-2">Products That Fight Static </h2>
+                                    <p class="py-2">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                                    <a href="#" class="mx-auto">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-4 my-3">
+                            <div class="blog-item mx-auto">
+                                <div class="blog-item-img">
+                                    <img src="src/img/blog/blog1.png" alt="">
+                                </div>
+                                <div class="blog-item-info mx-auto">
+                                    <div class="blog-item-info-top d-flex justify-content-around my-4">
+                                        <div>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span>15 JAN 2016</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments"></i>
+                                            <span>4 Comments</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bold py-2">Products That Fight Static </h2>
+                                    <p class="py-2">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                                    <a href="#" class="mx-auto">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4 my-3">
+                            <div class="blog-item mx-auto">
+                                <div class="blog-item-img">
+                                    <img src="src/img/blog/blog2.png" alt="">
+                                </div>
+                                <div class="blog-item-info mx-auto">
+                                    <div class="blog-item-info-top d-flex justify-content-around my-4">
+                                        <div>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span>15 JAN 2016</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments"></i>
+                                            <span>4 Comments</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bold py-2">Products That Fight Static </h2>
+                                    <p class="py-2">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                                    <a href="#" class="mx-auto">Read More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4 my-3">
+                            <div class="blog-item mx-auto">
+                                <div class="blog-item-img">
+                                    <img src="src/img/blog/blog3.png" alt="">
+                                </div>
+                                <div class="blog-item-info mx-auto">
+                                    <div class="blog-item-info-top d-flex justify-content-around my-4">
+                                        <div>
+                                            <i class="far fa-calendar-alt"></i>
+                                            <span>15 JAN 2016</span>
+                                        </div>
+                                        <div>
+                                            <i class="fas fa-comments"></i>
+                                            <span>4 Comments</span>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bold py-2">Products That Fight Static </h2>
+                                    <p class="py-2">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                                    <a href="#" class="mx-auto">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="newsletter-container d-flex justify-content-center align-items-center col-12">
+                <h2 class="d-none d-md-block">NEWSLETTER:</h2>
+                <div class="d-flex">
+                    <div class="email-container">
+                        <i class="fas fa-envelope position-absolute"></i>
+                        <input type="text" class="text-muted" placeholder="Enter your email address">
+                    </div>
+                    <a href="#" class="d-block email-container-button ml-3">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bottom">
+    <div class="container">
+        <div class="row">
+            <div class="block col-6 col-md-6 col-xl-3 my-3">
+                <h2 class="pb-3">INFORMATION</h2>
+                <a href="#">About us</a>
+                <a href="#">Privacy</a>
+                <a href="#">Conditions</a>
+                <a href="#">Online Support</a>
+            </div>
+            <div class="block col-6 col-md-6 col-xl-3 my-3">
+                <h2 class="pb-3">MY ACCOUNT</h2>
+                <a href="#">Login</a>
+                <a href="#">My Cart</a>
+                <a href="#">Wishlist</a>
+                <a href="#">Checkout</a>
+            </div>
+            <div class="block col-6 col-md-6 col-xl-3 my-3">
+                <h2 class="pb-3">INFORMATION</h2>
+                <a href="#">Specials</a>
+                <a href="#">New Products</a>
+                <a href="#">Best Sellers</a>
+                <a href="#">Our Stores</a>
+            </div>
+            <div class="block col-6 col-md-6 col-xl-3 my-3">
+                <h2 class="pb-3">ORDERS</h2>
+                <a href="#">Payment options</a>
+                <a href="#">Shipping and delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Shipping</a>
+            </div>
+            <div class="block col-6 col-md-6 col-xl-9 my-3">
+            </div>
+            <div class="block col-6 col-md-6 col-xl-3 my-3">
+                <div class="d-flex flex-wrap mb-4">
+                    <img class="mr-2 mb-2" src="src/img/cards/card1.png" alt="">
+                    <img class="mr-2 mb-2" src="src/img/cards/card2.png" alt="">
+                    <img class="mr-2 mb-2" src="src/img/cards/card3.png" alt="">
+                    <img class="mr-2 mb-2" src="src/img/cards/card4.png" alt="">
+                    <img class="mr-2 mb-2" src="src/img/cards/card5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 d-none d-md-none d-xl-block">
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 text-center mb-3 mb-md-0 text-md-left">
+                <p class="footer-title text-muted">©Copyright 2016 Bazar | All Rights Reserved</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 text-xl-right text-md-right text-center">
+                <div>
+                    <a href="#" class="social">
+                        <i class="fab fa-twitter mr-3"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fab fa-facebook-f mr-3"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fab fa-youtube mr-3"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fab fa-google-plus-g mr-3"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fab fa-linkedin-in mr-3"></i>
+                    </a>
+                    <a href="#" class="social">
+                        <i class="fab fa-pinterest-p mr-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-checkbox/1.5.0/js/bootstrap-checkbox.js"></script>
+
+
+<script type="text/javascript" src="dist/js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,910 @@
+@import "../variables.scss";
+
+.furniture {
+  margin-top: 40px;
+
+  &-socials {
+    justify-content: center;
+  }
+
+  &-social {
+    position: relative;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid black;
+    font-size: 13px;
+    text-decoration: none !important;
+
+    & i {
+      position: absolute;
+      left: 12px;
+    }
+
+    &.share {
+      background-color: #3b5998;
+      border-color: #3b5998;
+      color: white;
+    }
+  }
+
+
+
+  & .modal {
+    &-dialog {
+      //width: 421px;
+    }
+
+    &-body {
+      &-img {
+        width: 242px;
+        height: 259px;
+        background-color: #f4f5f7;
+      }
+
+      &-text {
+        & h2 {
+          font-size: 22px;
+        }
+
+        & hr {
+          width: 100%;
+        }
+
+        & .price-prev {
+          font-size: 22px;
+        }
+
+        & .price-actual {
+          font-size: 24px;
+          padding: 9px;
+          background-color: #2a2a2a;
+        }
+
+        & .add-to-card {
+          font-size: 13px;
+          padding: 13px 7px 13px 30px;
+          background-color: $main-color;
+          transition: bottom 0.3s ease;
+          text-decoration: none;
+          bottom: -34px;
+          right: 15px;
+
+          & .fa-shopping-basket {
+            left: 23px;
+          }
+        }
+
+        & .description {
+          line-height: 1.5;
+          font-size: 14px;
+        }
+
+        & .general-info {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &-modal {
+    //height: 950px;
+  }
+
+  &-title {
+    font-size: 22px;
+  }
+
+  &-filter {
+    text-decoration: none !important;
+    color: black;
+    padding: 5px 8px 5px 37px;
+    border: 1px solid #b7b7b7;
+  }
+
+  &:hover {
+    color: black !important;
+    text-decoration: none;
+  }
+}
+
+.fa-th-list {
+  right: 100px;
+}
+
+//FURNITURE ITEM
+
+.furniture-item {
+  width: 262px;
+  margin-bottom: 30px;
+
+  &:hover .circle {
+    top: 0;
+  }
+
+  &:hover .quick-view {
+    bottom: 0;
+  }
+
+  &:hover .add-to-card {
+    bottom: 0;
+  }
+
+  &:hover .furniture-item-info p {
+    color: $main-color;
+  }
+
+  &:hover .furniture-price {
+    background-color: $main-color;
+  }
+
+  &-img {
+    height: 260px;
+    background-color: #f4f5f7;
+    overflow: hidden;
+
+
+    & img {
+      height: 250px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &-info {
+    height: 150px;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+  }
+
+  & .circle {
+    width: 42px;
+    height: 21px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background-color: black;
+    transform: rotate(180deg);
+    left: 43%;
+    transition: top 0.3s ease;
+    top: -22px;
+
+    &-text {
+      transform: rotate(180deg);
+      top: 6px;
+      font-size: 12px;
+      right: 9px;
+    }
+  }
+
+  & .quick-view {
+    font-size: 13px;
+    padding: 10px 7px;
+    background-color: #2a2a2a;
+    bottom: -34px;
+    left: 15px;
+    transition: bottom 0.3s ease;
+    text-decoration: none;
+  }
+
+  & .add-to-card {
+    font-size: 13px;
+    padding: 10px 7px 10px 30px;
+    background-color: #2a2a2a;
+    transition: bottom 0.3s ease;
+    text-decoration: none;
+    bottom: -34px;
+    right: 15px;
+
+    & .fa-shopping-basket {
+      position: absolute;
+      right: 97px;
+    }
+  }
+
+  &-info {
+
+    & hr {
+      width: 90%;
+
+      &:before {
+        z-index: 10;
+        position: absolute;
+        top: 78px;
+        left: 44%;
+        content: "";
+        width: 30px;
+        height: 4px;
+        background-color: $main-color;
+      }
+    }
+
+    &-bottom {
+      bottom: 48px;
+
+      & .button-like {
+        width: 37px;
+        height: 37px;
+        border: 1px solid black;
+        left: 11px;
+
+        & .fa-heart {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-decoration: none;
+        }
+      }
+
+      & .button-arrows {
+        width: 37px;
+        height: 37px;
+        border: 1px solid black;
+        left: 53px;
+
+        & .fa-exchange-alt {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-decoration: none;
+        }
+      }
+
+      & .furniture-price {
+        width: 78px;
+        height: 37px;
+        background-color: #2a2a2a;
+        left: 170px;
+
+        & p {
+          padding-top: 11px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.filter-category-item {
+  font-size: 13px;
+  margin-bottom: 12px;
+
+  &:hover {
+    color: $main-color!important;
+    cursor: pointer;
+  }
+
+  & span:hover {
+    color: $main-color!important;
+    cursor: pointer;
+  }
+
+  &:hover .digit{
+    background-color: $main-color!important;
+  }
+}
+
+  .digit {
+    width: 20px;
+    height: 20px;
+    background-color: #2a2a2a;
+    pointer-events: none!important;
+    cursor: default;
+
+    & p {
+      position: relative;
+      top: 4px;
+    }
+}
+
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 0 9px 5px -3px rgba(0,0,0,.34);
+}
+
+.hidden {
+  display: none!important;
+}
+
+.modal-body-img img{
+  width: 150px;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.filter-tags div {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px 10px 38px;
+  color: darkgrey;
+  border: 1px solid darkgrey;
+  font-size: 14px;
+  text-decoration: none;
+
+  &:hover {
+    color: $main-color!important;
+    border-color: $main-color!important;
+    cursor: pointer;
+  }
+
+  & i {
+    position: absolute;
+    left: 14px;
+  }
+}
+
+//RED
+.custom-control-label.red {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.red::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #fa5f66;
+  border: #fa5f66 solid 1px;
+}
+
+.custom-control-label.red::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.red::before {
+  border-color: #fa5f66;
+  background-color: #fa5f66;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.red {
+  color: $main-color;
+}
+
+
+//BLACK
+.custom-control-label.black {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.black::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: black;
+  border: black solid 1px;
+}
+
+.custom-control-label.black::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.black::before {
+  border-color: black;
+  background-color: black;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.black {
+  color: $main-color;
+}
+
+
+//YELLOW
+.custom-control-label.yellow {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.yellow::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #e9e600;
+  border: #e9e600 solid 1px;
+}
+
+.custom-control-label.yellow::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.yellow::before {
+  border-color: #e9e600;
+  background-color: #e9e600;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.yellow {
+  color: $main-color;
+}
+
+
+
+//BLUE
+.custom-control-label.blue {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.blue::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #0190d3;
+  border: #0190d3 solid 1px;
+}
+
+.custom-control-label.blue::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.blue::before {
+  border-color: #0190d3;
+  background-color: #0190d3;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.blue {
+  color: $main-color;
+}
+
+
+//PINK
+.custom-control-label.pink {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.pink::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #f72fe4;
+  border: #f72fe4 solid 1px;
+}
+
+.custom-control-label.pink::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.pink::before {
+  border-color: #f72fe4;
+  background-color: #f72fe4;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.pink {
+  color: $main-color;
+}
+
+
+//GREEN
+.custom-control-label.green {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.green::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #14d400;
+  border: #14d400 solid 1px;
+}
+
+.custom-control-label.green::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.green::before {
+  border-color: #14d400;
+  background-color: #14d400;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.green {
+  color: $main-color;
+}
+
+//GREY1
+.custom-control-label.grey1 {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.grey1::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: white;
+  border: #2a2a2a solid 1px;
+}
+
+.custom-control-label.grey1::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey1::before {
+  border-color: $main-color;
+  background-color: $main-color;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey1 {
+  color: $main-color;
+}
+
+.custom-control-input:valid:checked~.digitSize.circle1 {
+  background-color: $main-color;
+}
+
+//GREY2
+.custom-control-label.grey2 {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.grey2::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: white;
+  border: #2a2a2a solid 1px;
+}
+
+.custom-control-label.grey2::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey2::before {
+  border-color: $main-color;
+  background-color: $main-color;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey2 {
+  color: $main-color;
+}
+
+.custom-control-input:valid:checked~.digitSize.circle2 {
+  background-color: $main-color;
+}
+
+
+//GREY3
+.custom-control-label.grey3 {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.grey3::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: white;
+  border: #2a2a2a solid 1px;
+}
+
+.custom-control-label.grey3::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey3::before {
+  border-color: $main-color;
+  background-color: $main-color;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey3 {
+  color: $main-color;
+}
+
+.custom-control-input:valid:checked~.digitSize.circle3 {
+  background-color: $main-color;
+}
+
+
+//GREY4
+.custom-control-label.grey4 {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.grey4::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: white;
+  border: #2a2a2a solid 1px;
+}
+
+.custom-control-label.grey4::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey4::before {
+  border-color: $main-color;
+  background-color: $main-color;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey4 {
+  color: $main-color;
+}
+
+.custom-control-input:valid:checked~.digitSize.circle4 {
+  background-color: $main-color;
+}
+
+
+//GREY5
+.custom-control-label.grey5 {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  font-size: 13px;
+}
+
+.custom-control-label.grey5::before {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: white;
+  border: #2a2a2a solid 1px;
+}
+
+.custom-control-label.grey5::after {
+  position: absolute;
+  top: -1px;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: no-repeat 50%/50% 50%;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey5::before {
+  border-color: $main-color;
+  background-color: $main-color;
+}
+
+.custom-control-input:valid:checked~.custom-control-label.grey5 {
+  color: $main-color;
+}
+
+.custom-control-input:valid:checked~.digitSize.circle5 {
+  background-color: $main-color;
+}
+
+
+@media (min-width: 1200px) {
+  .furniture-socials {
+    justify-content: left;
+  }
+}
+
+.digitSize {
+  width: 20px;
+  height: 20px;
+  background-color: #2a2a2a;
+  pointer-events: none !important;
+  cursor: default;
+
+  & p {
+    position: relative;
+    top: 3px;
+    font-size: 14px;
+  }
+}
+
+
+.range-slider-price {
+  & button {
+    width: 65px;
+    height: 32px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #d58e32;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  &-numbers {
+    width: 114px;
+    height: 32px;
+    border: 1px solid #e1e1e1;
+  }
+}
+
+#range-slider {
+  width: 255px;
+  height: 18px;
+}
+
+.multirange-original {
+  width: 90%;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: blue;
+  border: 1px solid darkgrey;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 4px solid $main-color;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -7px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 95%;
+  height: 8px;
+  cursor: pointer;
+  background: white;
+  border-radius: 1.3px;
+  border: 1px solid #e1e1e1;
+}

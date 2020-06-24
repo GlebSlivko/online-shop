@@ -1,0 +1,37 @@
+@import "../variables.scss";
+
+
+@media (min-width: $breakpoint-tablet) {
+  .furniture-gallery {
+    &-tabs-link  {
+      font-size: 18px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    &-slider  {
+      width: 555px;
+      &-indicators {
+        width: 455px;
+      }
+    }
+    &-slide  {
+      width: 555px;
+      &-img  {
+        height: 409px;
+        width: 500px;
+      }
+      &-info  {
+        right: 0;
+        bottom: 35px;
+      }
+      &-price  {
+        top: -91px;
+        left: calc(50% - 54px);
+      }
+    }
+  }
+
+  .not-active-indicator0, .not-active-indicator1, .not-active-indicator2, .not-active-indicator3  {
+    display: flex !important;
+  }
+}

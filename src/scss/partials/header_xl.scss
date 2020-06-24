@@ -1,0 +1,66 @@
+@import "../variables.scss";
+
+@media (min-width: $breakpoint-desktop)  {
+  .header-navbar {
+    &-modal {
+      width: 456px;
+    }
+  }
+  .modal-dialog  {
+    width: 1140px !important;
+    max-width: 1140px !important;
+  }
+  .header-content-cart  {
+    height: 50px;
+    width: 50px;
+    &-modal  {
+      width: 1140px !important;
+    }
+    &-icon  {
+      font-size: 21px;
+    }
+    &-quantity  {
+      height: 28px;
+      width: 28px;
+      top: 12px;
+      right: -17px;
+      font-size: 14px;
+    }
+  }
+
+  .cart-modal-product {
+    &-img {
+      margin-left: 27px;
+      height: 160px;
+      width: 229px;
+    }
+
+    &-title {
+      margin-left: 5px;
+      height: 59px;
+      width: 300px;
+    }
+
+    &-prices {
+      margin-left: 6px;
+      height: 67px;
+    }
+
+    &-price {
+      height: 36px;
+      width: 104px;
+      margin-top: 0;
+    }
+
+    &-price-last {
+      margin-top: 9px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+
+    &-quantity-wrapper {
+      height: 37px;
+      margin-top: 43px !important;
+    }
+  }
+}

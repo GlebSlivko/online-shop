@@ -1,0 +1,30 @@
+@import "variables.scss";
+@import "components/components.scss";
+
+body  {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container  {
+  min-width: 480px;
+}
+
+@import "partials/header";
+@import "partials/top-menu";
+@import "partials/top-slider";
+@import "partials/features";
+@import "partials/furniture-gallery";
+
+
+
+/////////import for student 2 after this
+@import "partials/stocks";
+@import "partials/furniture";
+@import "partials/blog";
+@import "partials/newsletter";
+@import "partials/bottom-menu";
+@import "partials/footer";
+
+
+
+

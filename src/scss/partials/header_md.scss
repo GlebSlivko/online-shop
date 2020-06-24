@@ -1,0 +1,69 @@
+@import "../variables.scss";
+
+
+@media (min-width: $breakpoint-tablet) {
+  .header-content-logo  {
+    height: 77px;
+    width: 165px;
+    background: url("../img/header/header-logo768.png") no-repeat center;
+  }
+
+  .modal-dialog  {
+    width: 750px !important;
+    max-width: 750px !important;
+  }
+  .header-content-cart  {
+    height: 50px;
+    width: 50px;
+    &-modal  {
+      width: 750px !important;
+    }
+
+    &-icon  {
+      font-size: 21px;
+    }
+    &-quantity  {
+      height: 28px;
+      width: 28px;
+      top: 12px;
+      right: -17px;
+      font-size: 14px;
+    }
+  }
+
+  .cart-modal-product {
+    &-img {
+      margin-left: 27px;
+      height: 128px;
+      width: 183px;
+    }
+
+    &-title {
+      margin-left: 5px;
+      height: 59px;
+      width: 300px;
+    }
+
+    &-prices {
+      margin-left: 6px;
+      height: 67px;
+    }
+
+    &-price {
+      height: 36px;
+      width: 104px;
+      margin-top: 0;
+    }
+
+    &-price-last {
+      margin-top: 9px;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+
+    &-quantity-wrapper {
+      height: 37px;
+    }
+  }
+}
+
